@@ -1,0 +1,321 @@
+---
+title: "Enumerations Reference"
+description: "This document describes all domain enums used across the food, nutrition, and recipe system.
+Each enum defines a controlled vocabulary for filtering, tagging, scoring, and classification."
+---
+
+
+## MoodLevel
+
+Represents the user’s energy and willingness to cook.
+
+| Value | Name       |
+| :---- | :--------- |
+| 1     | Lazy       |
+| 2     | LowKey     |
+| 3     | Moderate   |
+| 4     | Engaged    |
+| 5     | Ceremonial |
+
+## DifficultyLevel
+
+Represents recipe execution complexity.
+
+| Value | Name   |
+| :---- | :----- |
+| 1     | Easy   |
+| 2     | Medium |
+| 3     | Hard   |
+| 4     | Expert |
+
+## Cookware
+
+Bitmask enum representing required or supported kitchen tools.\
+Multiple values can be combined.
+
+| Value   | Name            |
+| :------ | :-------------- |
+| 1       | Oven            |
+| 2       | Microwave       |
+| 4       | Toaster         |
+| 8       | Blender         |
+| 16      | FoodProcessor   |
+| 32      | Mixer           |
+| 64      | StandMixer      |
+| 128     | CoffeeMaker     |
+| 256     | EspressoMachine |
+| 512     | PressureCooker  |
+| 1024    | AirFryer        |
+| 2048    | DeepFryer       |
+| 4096    | Grill           |
+| 8192    | PaniniPress     |
+| 16384   | SandwichMaker   |
+| 32768   | WaffleIron      |
+| 65536   | Steamer         |
+| 131072  | Juicer          |
+| 262144  | BakingSheet     |
+| 524288  | FryingPan       |
+| 1048576 | SaucePan        |
+| 2097152 | Peeler          |
+| 4194304 | Colander        |
+
+## HealthScore
+
+Represents a simplified healthfulness rating.
+
+| Value | Name   |
+| :---- | :----- |
+| 1     | Score1 |
+| 2     | Score2 |
+| 3     | Score3 |
+| 4     | Score4 |
+| 5     | Score5 |
+
+## MealType
+
+Bitmask enum describing when a meal is consumed.
+
+| Value | Name       |
+| :---- | :--------- |
+| 1     | Breakfast  |
+| 2     | Lunch      |
+| 4     | Dinner     |
+| 8     | Snack      |
+| 16    | PreWorkout |
+
+## Database
+
+Identifies the data source tier.
+
+| Value | Name         |
+| :---- | :----------- |
+| 1     | Foundational |
+| 2     | Branded      |
+
+## Origin
+
+Bitmask enum describing food or recipe origin by country.
+
+| Value       | Name              |
+| :---------- | :---------------- |
+| 1           | USA               |
+| 2           | UnitedKingdom     |
+| 4           | Australia         |
+| 8           | NewZealand        |
+| 16          | Brazil            |
+| 32          | Portugal          |
+| 64          | France            |
+| 128         | Canada            |
+| 256         | Germany           |
+| 512         | Italy             |
+| 1024        | Japan             |
+| 2048        | Russia            |
+| 4096        | China             |
+| 8192        | Taiwan            |
+| 16384       | Singapore         |
+| 32768       | HongKong          |
+| 65536       | Spain             |
+| 131072      | Mexico            |
+| 262144      | Argentina         |
+| 524288      | Bolivia           |
+| 1048576     | Chile             |
+| 2097152     | Colombia          |
+| 4194304     | CostaRica         |
+| 8388608     | Cuba              |
+| 16777216    | DominicanRepublic |
+| 33554432    | Ecuador           |
+| 67108864    | ElSalvador        |
+| 134217728   | Guatemala         |
+| 268435456   | Honduras          |
+| 536870912   | Nicaragua         |
+| 1073741824  | Panama            |
+| 2147483648  | Paraguay          |
+| 4294967296  | Peru              |
+| 8589934592  | Uruguay           |
+| 17179869184 | Venezuela         |
+| 34359738368 | PuertoRico        |
+| 68719476736 | EquatorialGuinea  |
+
+## TasteProfile
+
+Bitmask enum describing sensory characteristics.
+
+| Value | Name    |
+| :---- | :------ |
+| 1     | Sweet   |
+| 2     | Sour    |
+| 4     | Salty   |
+| 8     | Bitter  |
+| 16    | Umami   |
+| 32    | Spicy   |
+| 64    | Fruity  |
+| 128   | Fresh   |
+| 256   | Crispy  |
+| 512   | Crunchy |
+| 1024  | Creamy  |
+| 2048  | Citrusy |
+
+## HealthCondition
+
+Bitmask enum representing health-related considerations.
+
+| Value    | Name                   |
+| :------- | :--------------------- |
+| 1        | Obesity                |
+| 2        | Type2Diabetes          |
+| 4        | CardiovascularDisease  |
+| 8        | Hypertension           |
+| 16       | HighCholesterol        |
+| 32       | MetabolicSyndrome      |
+| 64       | GERD                   |
+| 128      | NAFLD                  |
+| 256      | Cancer                 |
+| 512      | Osteoporosis           |
+| 1024     | Anemia                 |
+| 2048     | EatingDisorders        |
+| 4096     | DepressionAndAnxiety   |
+| 8192     | DigestiveDisorders     |
+| 16384    | ChronicInflammation    |
+| 32768    | SkinConditions         |
+| 65536    | Gout                   |
+| 131072   | KidneyDisease          |
+| 262144   | ThyroidDisorders       |
+| 524288   | ChronicFatigueSyndrome |
+| 1048576  | IrritableBowelSyndrome |
+| 2097152  | GallbladderDisease     |
+| 4194304  | AcidReflux             |
+| 8388608  | Osteoarthritis         |
+| 16777216 | Psoriasis              |
+| 33554432 | SleepDisorders         |
+| 67108864 | CognitiveDecline       |
+
+## Cuisine
+
+Bitmask enum describing culinary traditions.
+
+| Value | Name          |
+| :---- | :------------ |
+| 1     | Indian        |
+| 2     | Italian       |
+| 4     | Mexican       |
+| 8     | Chinese       |
+| 16    | Japanese      |
+| 32    | Thai          |
+| 64    | Mediterranean |
+| 128   | American      |
+| 256   | Korean        |
+| 512   | Spanish       |
+| 1024  | MiddleEastern |
+| 2048  | Brazilian     |
+| 4096  | African       |
+| 8192  | Caribbean     |
+| 16384 | Vietnamese    |
+| 32768 | French        |
+
+## Approach
+
+Bitmask enum describing dietary philosophies.
+
+| Value   | Name                 |
+| :------ | :------------------- |
+| 1       | BalancedDiet         |
+| 2       | KetoDiet             |
+| 4       | LowCarbDiet          |
+| 8       | AtkinsDiet           |
+| 16      | PaleoDiet            |
+| 32      | PrimalDiet           |
+| 64      | MediterraneanDiet    |
+| 128     | ScandinavianDiet     |
+| 256     | OkinawaDiet          |
+| 512     | AyurvedicDiet        |
+| 1024    | TCMDiet              |
+| 2048    | VegetarianDiet       |
+| 4096    | VeganDiet            |
+| 8192    | Whole30Diet          |
+| 16384   | CleanEatingDiet      |
+| 32768   | ZoneDiet             |
+| 65536   | AntiInflammatoryDiet |
+| 131072  | MacrobioticDiet      |
+| 262144  | FlexitarianDiet      |
+| 524288  | NutritarianDiet      |
+| 1048576 | DashDiet             |
+| 2097152 | LongevityDiet        |
+
+## Restriction
+
+Bitmask enum describing ingredient presence.
+
+| Value | Name         |
+| :---- | :----------- |
+| 1     | HasBeef      |
+| 2     | HasPoultry   |
+| 4     | HasFish      |
+| 8     | HasShellfish |
+| 16    | HasPork      |
+| 32    | HasEggs      |
+| 64    | HasLamb      |
+| 128   | HasDairy     |
+| 256   | HasGluten    |
+| 512   | HasHoney     |
+| 1024  | HasBlood     |
+| 2048  | HasSoy       |
+| 4096  | HasWheat     |
+| 8192  | HasPeanuts   |
+| 16384 | HasTreeNuts  |
+| 32768 | HasSesame    |
+
+## Source
+
+Identifies external nutrition data providers.
+
+| Value | Name      |
+| :---- | :-------- |
+| 1     | USDA      |
+| 2     | Edamam    |
+| 4     | FatSecret |
+
+## Category
+
+Top-level food classification.
+
+| Value | Name                       |
+| :---- | :------------------------- |
+| 1     | Fruits                     |
+| 2     | Vegetables                 |
+| 3     | GrainsFloursCereals        |
+| 4     | LegumesPulses              |
+| 5     | NutsSeeds                  |
+| 6     | Fungi                      |
+| 7     | MeatPoultrySeafood         |
+| 8     | PlantBasedMeatAlternatives |
+| 9     | Dairy                      |
+| 10    | DairyAlternatives          |
+| 11    | FatsOils                   |
+| 12    | HerbsSpicesSeasonings      |
+| 13    | CondimentsSaucesDressings  |
+| 14    | Beverages                  |
+| 15    | Sweeteners                 |
+| 16    | HomemadeGenericDishes      |
+| 17    | PackagedBrandedFoods       |
+| 18    | RestaurantFoodserviceItems |
+| 19    | MiscellaneousOther         |
+
+## FoodSection
+
+Represents grocery-store style organization.
+
+| Value | Name                         |
+| :---- | :--------------------------- |
+| 1     | 🥦 Produce                   |
+| 2     | 🥩 Meat, Poultry & Seafood   |
+| 3     | 🥛 Dairy & Eggs              |
+| 4     | 🍞 Bakery                    |
+| 5     | 🥫 Pantry & Dry Goods        |
+| 6     | 🧊 Frozen Foods              |
+| 7     | 🍿 Snacks & Sweets           |
+| 8     | 🥤 Beverages                 |
+| 9     | 🥪 Deli & Prepared Foods     |
+| 10    | 🌍 International / Specialty |
+| 11    | 🧂 Seasoning                 |
+
+---
